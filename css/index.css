@@ -372,7 +372,7 @@ footer {
 */
 
 * {
-	border: px solid black;
+	border: 1px solid black;
 }
 
 @media(max-width: 800px) {
@@ -408,5 +408,46 @@ footer {
 }
 
 @media(max-width: 500px) {
-
+  .nav-header {
+    height: 31vh;
+    width: 100%
+  }
+  nav {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav a:nth-child(1) {
+    border-top: 1px solid gray;
+  }
+  nav a {
+    align-self: center;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid gray;
+    width: 100%
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .top-section {
+    flex-direction: column;
+  }
+  .top-section div {
+    margin: 0;
+    width: 100%;
+  }
+  #about {
+    margin: 0;
+    padding-top: 0;
+  }
+  .bottom-section {
+    flex-direction: column;
+  }
+  .bottom-section div {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #vision {
+    margin-bottom: 0;
+  }
 }
