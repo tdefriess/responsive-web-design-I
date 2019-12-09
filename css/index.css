@@ -69,10 +69,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* Your code starts here! */
 
-/* Debug border
-* {
-	border: 1px solid black;
-} */
+
+
 /* Navigation header */
 .nav-header {
 	display: flex;
@@ -95,7 +93,10 @@ h1, h2, h3, h4, h5 {
 .logo {
 	align-items:baseline;
 	height: 40px;
+}
 
+nav {
+  padding-right: 20px;
 }
 
 nav a {
@@ -161,7 +162,7 @@ h1 {
 }
 
 .top-section {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	width: 82%;
 	margin: 0 auto;
 	margin-top: 60px;
@@ -211,7 +212,7 @@ h1 {
 #contact {
 	width: 82%;
 	margin: 40px auto;
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	padding-top: 40px;
 }
 
@@ -236,7 +237,7 @@ footer {
 	width: 82%;
 	margin: 0 auto;
 	padding-bottom: 40px;
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black;
 }
 
 .services-middle {
@@ -252,7 +253,7 @@ footer {
 .services-middle div {
 	width: 48%;
 	background-color: #eeeeee;
-	border: 1px solid black;
+	border: 2px solid black;
 	padding: 15px;
 	margin: 15px 0;
 	height:
@@ -302,7 +303,7 @@ footer {
 	margin-left: 20px;
 }
 
-/* Mobile Styles */
+/* Previous stretch solution
 @media only screen and (max-width: 400px) {
 	.logo {
 		margin: 0;
@@ -322,7 +323,7 @@ footer {
 	nav a{
 		width: 33%;
 	}
-	/* Index.html*/
+
 	header {
 		display: flex;
 		flex-direction: column;
@@ -353,7 +354,7 @@ footer {
 		width: 100%;
 		padding: 30px 0;
 	}
-	/* Services.html */
+
 	.services-middle div {
 		width: 100%;
 	}
@@ -366,4 +367,46 @@ footer {
 	.services-bottom div, .services-bottom img {
 		width: 100%;
 	}
+}
+
+*/
+
+* {
+	border: px solid black;
+}
+
+@media(max-width: 800px) {
+  .nav-header {
+    dispaly: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    height: 10vh;
+    margin-bottom: 60px;
+  }
+  .tag {
+    margin: 0
+  }
+  .logo {
+    width: 183px;
+    align-self: center;
+  }
+  header img {
+    display: none;
+  }
+  .top-section {
+    width: 90%;
+  }
+  .middle-img {
+    width: 90%;
+  }
+  .bottom-section {
+    width: 90%;
+  }
+  #contact {
+    width: 90%;
+  }
+}
+
+@media(max-width: 500px) {
+
 }
