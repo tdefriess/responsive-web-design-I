@@ -372,12 +372,12 @@ footer {
 */
 
 * {
-	border: 1px solid black;
+	border: px solid black;
 }
 
 @media(max-width: 800px) {
   .nav-header {
-    dispaly: flex;
+    display: flex;
     flex-direction: column-reverse;
     width: 90%;
     height: 10vh;
@@ -409,22 +409,25 @@ footer {
 
 @media(max-width: 500px) {
   .nav-header {
-    height: 31vh;
-    width: 100%
+    height: 32vh;
+    width: 100%;
   }
   nav {
     flex-direction: column;
     padding: 0;
+    margin: 0;
+    align-items: center;
   }
   nav a:nth-child(1) {
     border-top: 1px solid gray;
+    margin: 0;
   }
-  nav a {
-    align-self: center;
-    text-align: center;
+  .nav-header nav a {
     padding: 15px 0;
     border-bottom: 1px solid gray;
-    width: 100%
+    align-self: center;
+    text-align: center;
+    width: 100%;    
   }
   .logo {
     margin-bottom: 20px;
